@@ -46,8 +46,8 @@ h2{
 
 #processBody{
     width: 95%;
-    height: 300px;
-    border: 1px solid olivedrab;
+    height: auto;
+    border-left: 1px solid olivedrab;
     margin: auto;
 }
 
@@ -70,8 +70,17 @@ button{
     font-size: 0.8rem;
     color: royalblue;
 }
-@media only screen and (max-width:400px){
-    #nav{
+p{
+    color:navy;
+    text-decoration: underline;
+    text-align: left;
+    padding-left: 2rem;
+}
+@media only screen and (max-width:600px){
+    #processNav{
         grid-template-columns: 1fr;
+    }
+    #navImg{
+        grid-column: 1/1;
     }
 }
