@@ -45,13 +45,13 @@ h2{
 }
 
 #processBody{
-    width: 95%;
+    width: 98%;
     height: auto;
     border-left: 1px solid olivedrab;
     margin: auto;
 }
 
-.visible{
+.invisible{
     /* we could use visible here but it would take up space */
     display: none;    
 }
