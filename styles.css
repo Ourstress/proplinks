@@ -3,7 +3,7 @@ html{
     background-color: cornsilk;
     color: steelblue;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 body{
@@ -67,7 +67,7 @@ li{
     text-align: left;
 }
 button{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: steelblue;
     background: transparent; 
     border: 2px solid #0099CC;
@@ -88,5 +88,8 @@ p{
     }
     #navImg{
         grid-column: 1/1;
+    }
+    button{
+        margin-bottom: 0.5rem;
     }
 }
