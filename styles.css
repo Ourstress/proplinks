@@ -3,7 +3,7 @@ html{
     background-color: cornsilk;
     color: steelblue;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 body{
@@ -39,10 +39,10 @@ h2{
 .navImg{
     grid-column: 1/4;
 }
-.navItem{
+/* .navItem{
     margin-top: 0.7rem;
     border: 1px solid olivedrab;
-}
+} */
 
 #processBody{
     width: 98%;
@@ -68,7 +68,13 @@ li{
 }
 button{
     font-size: 0.8rem;
-    color: royalblue;
+    color: steelblue;
+    background: transparent; 
+    border: 2px solid #0099CC;
+    border-radius: 6px; 
+    margin: 0 1rem 0 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+    cursor:pointer;
 }
 p{
     color:navy;
