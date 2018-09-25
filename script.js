@@ -1,16 +1,32 @@
 
 
-let navArray = [["nav1","#process1"],["nav2","#process2"],["nav3","#process3"]]
-let navIDs = new Map(navArray)
+let navArrayProcess = [["nav1","#process1"],["nav2","#process2"],["nav3","#process3"]]
+let navIDsProcess = new Map(navArrayProcess)
+let navArrayFinance = [["fin1","#finance1"],["fin2","#finance2"],["fin3","#finance3"]]
+let navIDsFinance = new Map(navArrayFinance)
 
-document.addEventListener("DOMContentLoaded", function(){
-    let allNavs = document.querySelectorAll(".navDiv")
-    let processNav = document.querySelector("#processNav")
+const content = (target, container, lookupContent) => {
+    document.addEventListener("DOMContentLoaded", function(){
+    let allNavs = document.querySelectorAll(target)
+    let processNav = document.querySelector(container)
+    //add listener to monitor clicks on allNavs
     processNav.addEventListener("click", function(event){
+        let selection = document.querySelector(lookupContent.get(event.target.id))
+       if(selection.classList.contains("invisible")){
         allNavs.forEach(function(element){
             element.classList.contains("invisible")? "" : element.classList.toggle("invisible")
         })
-        let selection = document.querySelector(navIDs.get(event.target.id))
-        selection.classList.toggle("invisible")
+        // toggle selection to visible
+        selection.classList.toggle("invisible")} else {selection.classList.toggle("invisible")}
     })
-}) 
+})
+} 
+
+content(".navDiv", "#processNav", navIDsProcess)
+content(".navDiv", "#processNav2", navIDsFinance)
+
+// loading in content from other sources seem dangerous
+//document.addEventListener("DOMContentLoaded",
+//function load_home() {
+//    document.querySelector("#ID").innerHTML='<object type="text/html" data="finance.html" ></object>';
+//})
