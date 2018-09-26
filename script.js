@@ -4,6 +4,8 @@ let navArrayProcess = [["nav1","#process1"],["nav2","#process2"],["nav3","#proce
 let navIDsProcess = new Map(navArrayProcess)
 let navArrayFinance = [["fin1","#finance1"],["fin2","#finance2"],["fin3","#finance3"]]
 let navIDsFinance = new Map(navArrayFinance)
+let navArrayNationality = [["nat1","#nationality1"],["nat2","#nationality2"],["nat3","#nationality3"]]
+let navIDsNationality = new Map(navArrayNationality)
 
 const content = (target, container, lookupContent) => {
     document.addEventListener("DOMContentLoaded", function(){
@@ -24,6 +26,7 @@ const content = (target, container, lookupContent) => {
 
 content(".navDiv", "#processNav", navIDsProcess)
 content(".navDiv", "#processNav2", navIDsFinance)
+content(".navDiv", "#processNav3", navIDsNationality)
 
 // loading in content from other sources seem dangerous
 //document.addEventListener("DOMContentLoaded",
