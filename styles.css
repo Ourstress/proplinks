@@ -13,13 +13,13 @@ body{
 h1, h2{
     margin: 0.5rem 0 3% 0.5rem;
     font-size: 1.5rem;
+    display:inline-block;
 }
 h1{
     color: darkslategrey;
 }
 h2{
     color: rosybrown;
-    display:inline-block;
 }
 
 #flag{
